@@ -1,3 +1,83 @@
+# TrustRefund - Blockchain-powered Automated Refunds for Travelers  
+
+## 🌟 Inspiration  
+When tourist attractions close due to bad weather or unexpected events, tourists often face **a complicated, slow, and non-transparent refund process**. Meanwhile, attractions struggle with **financial strain and operational challenges in handling refunds**.  
+
+**TrustRefund** is a decentralized application (DApp) that **automates ticket purchases and refunds using blockchain smart contracts**, ensuring **transparency, fairness, and efficiency** while reducing the **manual workload for attractions**.
+
+---
+
+## 🎯 What It Does  
+TrustRefund provides a **decentralized and automated refund system** for tourism.  
+
+- **Tourists** can purchase tickets securely on the blockchain.  
+- **Refunds are processed automatically** based on smart contract rules.  
+- **Attractions benefit from structured refund management**, reducing operational costs and enhancing visitor trust.  
+
+### **Key Features**  
+- **Smart Contract-powered Ticketing & Refunds**  
+- **Immutable Purchase Records**  
+- **Automated Full & Partial Refunds Based on Visit Status**  
+
+---
+
+## 🏗️ How We Built It  
+- **Solidity Smart Contracts** – Handles ticket purchases, refund eligibility, and secure payments.  
+- **React Frontend** – Provides a seamless user experience for Web3 interactions.  
+- **ethers.js** – Facilitates Web3 transactions between the frontend and blockchain.  
+- **MetaMask Integration** – Enables authentication and transaction signing.  
+- **Remix IDE** – Used for developing and testing Solidity contracts before deployment.  
+
+---
+
+## ⚡ Challenges We Ran Into  
+1. **Blockchain Transaction Delays**  
+   - Refund transactions occasionally remained pending due to testnet congestion.  
+   - ✅ **Solution**: Manually increasing gas fees to prioritize transactions.  
+
+2. **Ticket Data Not Stored Properly**  
+   - `tickets(address)` sometimes failed to return `amountPaid`, meaning data wasn’t recorded correctly.  
+   - ✅ **Solution**: Optimized Solidity logic to ensure correct storage and retrieval.  
+
+3. **Smart Contract Security Risks**  
+   - Refund processes could be exploited by unauthorized accounts.  
+   - ✅ **Solution**: Implemented `ReentrancyGuard` and `Ownable` for protection.  
+
+---
+
+## 🚀 What's Next for TrustRefund  
+- **Optimizing Refund Confirmation Speeds** – Implementing event listeners for real-time transaction updates.  
+- **Deploying on Layer 2 Solutions** – Reducing gas fees by migrating to Polygon or Optimism.  
+- **Expanding to More Use Cases** – Enabling refund automation for event ticketing, hotels, and flight cancellations.  
+- **Integrating Dispute Resolution** – Adding a decentralized mechanism for refund appeals.  
+- **Partnerships with Attractions** – Collaborating with real-world tourism businesses to pilot the solution.  
+
+---
+
+## 🎥 Demo Video  
+🔗 **[Watch the Full Demo Here](#)** (Replace with actual video link)  
+
+## 📂 GitHub Repository  
+🔗 **[View the Full Source Code](https://github.com/beiyuezou/TrustRefund)**  
+
+## 📖 How to Run Locally  
+### **Prerequisites**
+- Install [Node.js](https://nodejs.org/)
+- Install [MetaMask](https://metamask.io/)
+- Clone the repository
+
+### **Installation**
+```bash
+git clone https://github.com/beiyuezou/TrustRefund.git
+cd TrustRefund
+npm install
+
+Run the Project
+npm start
+Open http://localhost:3000 in your browser.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
